@@ -1,0 +1,13 @@
+az account list
+
+az account set --subscription 'subscription name'
+
+az group create --location eastus --name RGname
+
+az vm create -n vmname -g RGname --image UbuntuLTS --generate-ssh-keys
+
+#default keys are stored in /home/user/.ssh/id_rsa.pub
+#go and login to vmi
+
+
+ssh user@ipaddress
